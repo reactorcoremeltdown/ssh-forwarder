@@ -3,14 +3,6 @@ plugins {
 }
 
 android {
-    signingConfigs {
-        debug {
-            storeFile file('C:\\Users\\Customer\\AndroidStudioProjects\\rcmd.jks')
-            keyAlias 'rcmd0'
-            storePassword 'QHVPNocbyhxU4iHEtome8mc3AupLzRVp'
-            keyPassword 'QHVPNocbyhxU4iHEtome8mc3AupLzRVp'
-        }
-    }
     namespace 'space.rcmd.sshdeeplink'
     compileSdk 33
 
