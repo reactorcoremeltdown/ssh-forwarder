@@ -19,7 +19,7 @@ steps:
   - cd $DRONE_REPO_NAME && sudo make
 
 node:
-  machine: hangar.rcmd.space
+  role: production
 
 ---
 kind: pipeline
@@ -44,7 +44,7 @@ trigger:
   - failure
 
 node:
-  machine: hangar.rcmd.space
+  role: production
 
 depends_on:
 - default
