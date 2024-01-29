@@ -65,7 +65,7 @@ steps:
       from_secret: WEBDAV_PASSWORD
 
 node:
-  machine: builder
+  role: builder
 
 depends_on:
 - hetzner-api-init
