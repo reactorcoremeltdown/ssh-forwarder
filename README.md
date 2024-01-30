@@ -15,9 +15,10 @@ As of today Termux does not support opening `ssh://` links natively, and I neede
 1. Install [an apk from releases](https://github.com/reactorcoremeltdown/ssh-forwarder/releases/download/v1.0/app-release.apk)
 2. Download and install [a task for Tasker](https://github.com/reactorcoremeltdown/ssh-forwarder/blob/master/tasker/Open_Termux_SSH.tsk.xml)
 3. Download and install [a profile for Tasker](https://github.com/reactorcoremeltdown/ssh-forwarder/blob/master/tasker/Catch_SSH.prf.xml)
-4. Put [a script](https://github.com/reactorcoremeltdown/ssh-forwarder/blob/master/termux/ssh_forwarder) into `~/.termux/tasker/` folder of your Termux installation
-5. You should be good to go!
-6. Optionally use [HTTP2SSH](https://http2ssh.tiredsysadmin.cc) to wrap your `ssh://` links into `https://`
+4. Install the [Termux Tasker Plugin](https://f-droid.org/en/packages/com.termux.tasker/)
+5. Put [a script](https://github.com/reactorcoremeltdown/ssh-forwarder/blob/master/termux/ssh_forwarder) into `~/.termux/tasker/` folder of your Termux installation
+6. You should be good to go!
+7. Optionally use [HTTP2SSH](https://http2ssh.tiredsysadmin.cc) to wrap your `ssh://` links into `https://`
 
 ## Note on distribution of the app and contribution to Termux's upstream
 
