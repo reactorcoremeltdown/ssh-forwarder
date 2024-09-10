@@ -7,4 +7,4 @@ build:
 
 publish:
 	rm -fr /var/lib/fdroid/unsigned/*
-	find . -name '*.apk'
+	find /var/storage/wastebox/Backups -name '*.apk'
