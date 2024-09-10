@@ -7,4 +7,9 @@ build:
 
 publish:
 	rm -fr /var/lib/fdroid/unsigned/*
-	find /var/storage/wastebox/Backups -name '*.apk'
+	mv /var/storage/wastebox/Backups/ssh-forwarder-unsigned.apk /var/lib/fdroid/unsigned/space.rcmd.sshdeeplink_$(shell date '+%s').apk
+	touch /var/lib/fdroid/metadata/space.rcmd.sshdeeplink.yml
+	cd /var/lib/fdroid && \
+		/opt/fdroidserver/fdroid publish --verbose && \
+		/opt/fdroidserver/fdroid update --verbose && \
+		/opt/fdroidserver/fdroid deploy --verbose
