@@ -4,7 +4,7 @@ build:
 	echo "Building app"
 	test -d /tmp/gradlecache || mkdir /tmp/gradlecache
 	podman run -it --memory 2g -v $(shell pwd):/project -v /tmp/gradlecache:"/root/.gradle" mingc/android-build-box bash -c 'cd /project; ./gradlew build'
-	mv ./app/build/apk/release/app-release-unsigned.apk ./ssh-forwarder-unsigned.apk
+	find . -name '*.apk'
 
 publish:
 	rm -fr /var/lib/fdroid/unsigned/*
